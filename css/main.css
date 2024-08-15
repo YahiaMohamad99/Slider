@@ -19,11 +19,17 @@ i{
 
 #lightBox{
     background-image: url("../imgs/2.jpg");
-    width: 50%;
+    width: 60%;
     height: 500px;
     background-size: cover;
     background-position: center;
     
 
 
+}
+@media screen and (max-width:992px) {
+    #lightBox{
+        width: 80%;
+    }
+    
 }
