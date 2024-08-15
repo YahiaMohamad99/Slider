@@ -20,10 +20,15 @@ for(var i=0 ; i<myImgs.length ; i++){
     })
 }
 closeSliderIcon.addEventListener("click",closeslider)
+lightBoxContainer.addEventListener("click",function(event){
+    if(event.target != lightBox && event.target != nextElement && event.target != previousElement ){
+         closeslider()  
+    }
+ 
+})
 nextElement.addEventListener("click",getNextElement)
 previousElement.addEventListener("click",getPreviousElement)
 document.addEventListener("keyup",function(event){
- 
     
  if(lightBoxContainer.classList.contains("d-flex")){
     console.log("he");
