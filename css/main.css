@@ -1,0 +1,29 @@
+.text{
+    bottom: 20px;
+ width: 80%;
+ left: 10%;
+}
+.item img{
+    height: 300px;
+}
+i{
+    cursor: pointer;
+}
+#lightBoxContainer{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#lightBox{
+    background-image: url("../imgs/2.jpg");
+    width: 50%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    
+
+
+}
