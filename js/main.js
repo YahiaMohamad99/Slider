@@ -22,6 +22,32 @@ for(var i=0 ; i<myImgs.length ; i++){
 closeSliderIcon.addEventListener("click",closeslider)
 nextElement.addEventListener("click",getNextElement)
 previousElement.addEventListener("click",getPreviousElement)
+document.addEventListener("keyup",function(event){
+ 
+    
+ if(lightBoxContainer.classList.contains("d-flex")){
+    console.log("he");
+
+      switch (event.key) {
+        case "ArrowRight":
+            getNextElement()
+            
+            break;
+        case "ArrowLeft":
+            getPreviousElement()
+            
+            break;
+        case "Escape":
+            closeslider ()
+            
+            break;
+    
+        default:
+            break;
+    }
+ }
+  
+})
 
 function closeslider (){
   
@@ -47,3 +73,5 @@ function getPreviousElement(){
 
 
 }
+
+
